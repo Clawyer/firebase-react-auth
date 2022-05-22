@@ -1,0 +1,146 @@
+.modal
+    width: 100vw
+    height: 100vh
+    position: fixed
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 2
+
+.modal--overlay
+    width: 100vw
+    height: 100vh
+    background-color: rgba(91, 112, 131, 0.4)
+    position: fixed
+    z-index: -1
+
+.modalContainer
+    width: 500px
+    max-height: 710px
+    border-radius: 12px
+    background-color: rgba(0,0,0,1)
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+    display: flex
+    flex-direction: column
+    padding: 10px 25px
+    color: white
+    padding-bottom:1rem
+
+    & .title
+        display: inline-block
+        text-align: center
+        margin-top: 10px
+
+.titleCloseBtn
+    display: flex
+    justify-content: center
+    & button
+        background-color: transparent
+        border: none
+        font-size: 25px
+        cursor: pointer
+    i
+        text-align: center
+        flex-grow: 1
+
+.modalContainer .body
+    flex: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 1.7rem
+    text-align: center
+
+.modalContainer .footer
+    flex: 20%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    & button
+        width: 150px
+        height: 45px
+        margin: 10px
+        border: none
+        background-color: cornflowerblue
+        color: white
+        border-radius: 8px
+        font-size: 20px
+        cursor: pointer
+
+#cancelBtn
+    background-color: crimson
+
+.form
+    padding: 0 2rem
+    display: flex
+    flex-flow: column
+    gap: 1.5rem
+    div
+        flex-grow: 1
+    input
+        width: 100%
+        padding: 1rem 7px
+        align-items: stretch
+        border: 1px solid rgb(51, 54, 57)
+        text-transform: Capitalize
+        border-radius: 4px
+
+.modal--title
+    padding: 0 2rem
+    padding-top: 1rem
+    padding-bottom: 2rem
+    font-size: 1.8rem
+    font-weight: bold
+
+.react-calendar
+    background-color: black
+    color: white
+    display: flex
+    flex-flow: column
+
+.react-date-picker__wrapper
+    border: none
+    display: block
+.react-date-picker__button
+    display: none
+
+.react-date-picker__button:enabled:hover .react-date-picker__button__icon, .react-date-picker__button:enabled:focus .react-date-picker__button__icon
+    filter: none
+.react-calendar__tile:enabled:hover, .react-calendar__tile:enabled:focus,
+.react-calendar__navigation button:enabled:hover, .react-calendar__navigation button:enabled:focus
+    background-color: #0078d7
+.react-calendar__navigation button
+    text-align: center
+.dob
+    padding: 0
+
+.dob ~ span
+    font-size: 0.8rem
+    transform: translateY(-1rem)
+.react-date-picker__inputGroup
+    input
+        padding: 10px 20px
+        margin: 0 0.5rem
+
+.submit--btn
+    cursor: pointer
+    background: #1da1f2
+    color: #fff
+    transition: all 0.2s ease
+    margin-bottom: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 24rem
+    height: 3.3rem
+    border-radius: 10vw
+    font-size: 1rem
+    text-decoration: none
+    font-weight: 700
+
+.validation
+    padding-top: 10px
+.hidden
+    display: none
+    opacity: 0

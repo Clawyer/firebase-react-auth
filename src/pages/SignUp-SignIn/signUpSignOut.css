@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.signPage {
+  width: 100vw;
+  height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.signPage .image {
+  height: 100%;
+  background: url("./assets/twitter-sign.png") center center/cover;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 53vw;
+          flex: 0 1 53vw;
+  position: relative;
+}
+
+.signPage .content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 47vw;
+          flex: 0 0 47vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2rem;
+  color: white;
+}
+
+.signPage .big-bird {
+  width: 16rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  fill: #fff;
+}
+
+.signPage .small-bird {
+  width: 3.5rem;
+  fill: #d6d9db;
+}
+
+.signPage h1, .signPage h3 {
+  font-weight: 900;
+}
+
+.signPage h1 {
+  font-size: 5.5vw;
+}
+
+.signPage h3 {
+  font-size: 2.3rem;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24rem;
+  height: 3.3rem;
+  border-radius: 10vw;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-signup {
+  background: #1da1f2;
+  color: #fff;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-bottom: 20px;
+}
+
+.btn-signup:hover {
+  background: #1f94dd;
+}
+
+.btn-login {
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+}
+
+.footer {
+  padding: 1rem 2%;
+  /* & nav
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center */
+}
+
+.footer nav a,
+.footer nav div {
+  text-decoration: none;
+  font-size: 13px;
+  color: #536471;
+  margin: .3rem .5rem;
+  text-transform: capitalize;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.footer nav > div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.footer nav a:hover {
+  border-bottom: 1px solid #536471;
+}
+
+@media (max-width: 1050px) {
+  .content {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    max-width: 600px;
+    height: 80vh;
+    margin: 0 auto;
+  }
+  .image {
+    height: 50vh;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100vw;
+            flex: 0 1 100vw;
+  }
+  .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .btn {
+    width: 15rem;
+    margin-right: 1rem;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 580px) {
+  .content {
+    padding: 2rem;
+    margin: 0;
+  }
+  .button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .btn {
+    width: 25rem;
+  }
+  h1 {
+    font-size: 10vw;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+/*# sourceMappingURL=signUpSignOut.css.map */

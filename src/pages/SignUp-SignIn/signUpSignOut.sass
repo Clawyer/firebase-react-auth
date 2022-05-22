@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+
+body
+    font-family: 'Lato', sans-serif
+    min-height: 100vh
+    overflow-x: hidden
+    background-color: black
+
+.signPage
+    width: 100vw
+    height: 92vh
+    display: flex
+    flex-wrap: wrap
+
+    .image
+        height: 100%
+        background: url('./assets/twitter-sign.png') center center/cover
+        flex: 0 1 53vw
+        position: relative
+        // z-index: -1
+
+    .content
+        flex: 0 0 47vw
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-evenly
+        padding: 2rem
+        color: white
+
+    .big-bird
+        width: 16rem
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        fill: #fff
+
+    .small-bird
+        width: 3.5rem
+        fill: rgb(214, 217, 219)
+
+    h1, h3
+        font-weight: 900
+
+    h1
+        font-size: 5.5vw
+
+    h3
+        font-size: 2.3rem
+
+.btn
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 24rem
+    height: 3.3rem
+    border-radius: 10vw
+    font-size: 1rem
+    text-decoration: none
+    font-weight: 700
+
+    &-signup
+        background: #1da1f2
+        color: #fff
+        transition: all .2s ease
+        margin-bottom: 20px
+
+    &-signup:hover
+        background: #1f94dd
+
+    &-login
+        border: 1px solid #1da1f2
+        color: #1da1f2
+
+.footer
+    padding: 1rem 2%
+
+    /* & nav
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center */
+
+    & nav a,
+
+    & nav div
+        text-decoration: none
+        font-size: 13px
+        color: #536471
+        margin: .3rem .5rem
+        text-transform: capitalize
+        border-bottom: 1px solid transparent
+        transition: all .2s ease
+
+    & nav > div
+        flex-grow: 1
+        width: 100%
+        text-align: center
+    & nav a:hover
+        border-bottom: 1px solid #536471
+
+@media(max-width: 1050px)
+    .content
+        order: -1
+        max-width: 600px
+        height: 80vh
+        margin: 0 auto
+
+    .image
+        height: 50vh
+        flex: 0 1 100vw
+
+    .button
+        display: flex
+
+    .btn
+        width: 15rem
+        margin-right: 1rem
+
+    h1
+        font-size: 8vw
+
+@media(max-width: 580px)
+    .content
+        padding: 2rem
+        margin: 0
+
+    .button
+        flex-direction: column
+
+    .btn
+        width: 25rem
+
+    h1
+        font-size: 10vw
+
+    h3
+        font-size: 1.7rem
